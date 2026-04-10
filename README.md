@@ -1,63 +1,237 @@
-# Personal Finance Health Analyzer
+# 💰 Personal Finance Health Analyzer
 
-A comprehensive financial health assessment tool built with Streamlit that uses proven financial formulas and algorithms to analyze your personal finances.
+A smart and interactive web application built using **Streamlit** that analyzes your financial health using real-world financial formulas and rule-based algorithms.
 
-## Features
+---
 
-- **Formula-Based Analysis**: Uses industry-standard financial ratios and calculations
-- **Real-Time Assessment**: Instant analysis of your financial health
-- **Interactive Dashboard**: Visual charts and metrics for easy understanding
-- **Personalized Recommendations**: Actionable advice based on your financial data
-- **Educational Content**: Learn about financial formulas and best practices
+## 🚀 Overview
 
-## Financial Metrics Calculated
+The **Personal Finance Health Analyzer** helps users understand their financial condition by evaluating income, expenses, savings, and debt. It provides a **financial health score**, **risk level**, and **actionable recommendations**.
 
-1. **Savings Rate**: Percentage of income saved after expenses
-2. **Debt-to-Income Ratio**: Debt burden relative to income
-3. **Credit Utilization**: Credit card usage vs available credit
-4. **Emergency Fund Ratio**: Months of expenses covered by savings
-5. **Debt-to-Asset Ratio**: Debt burden relative to total assets
-6. **Financial Health Score**: Composite score combining all metrics
+---
 
-## Installation
+## ⚙️ How It Works
 
-1. Clone this repository
-2. Install dependencies:
-   ```bash
-   pip install -r requirements.txt
-   ```
-3. Run the application:
-   ```bash
-   streamlit run main.py
-   ```
+1. Enter your financial details:
 
-## Usage
+   * Monthly Income
+   * Monthly Expenses
+   * Savings
+   * Debt Payments
+   * Total Debt
+   * Credit Card Usage
 
-1. Open the application in your browser
-2. Enter your financial data in the sidebar:
-   - Monthly income
-   - Monthly expenses
-   - Current savings
-   - Monthly debt payments
-   - Total debt
-   - Credit card balance and limit
-3. Click "Run Financial Analysis"
-4. View your results, charts, and recommendations
+2. Click **"Run Financial Analysis"**
 
-## Formulas Used
+3. The system:
 
-The analyzer uses the following financial formulas:
+   * Validates inputs
+   * Applies financial formulas
+   * Runs analysis logic
 
-- **Savings Rate**: `(Income - Expenses) / Income × 100`
-- **Debt-to-Income Ratio**: `Debt Payments / Income × 100`
-- **Credit Utilization**: `Balance / Limit × 100`
-- **Emergency Fund**: `Savings / Monthly Expenses`
-- **Debt-to-Asset Ratio**: `Debt / (Debt + Savings) × 100`
+4. Output includes:
 
-## Contributing
+   * 📊 Financial metrics
+   * 📈 Graphs
+   * 💡 Recommendations
+   * ⭐ Health score
 
-Contributions are welcome! Please feel free to submit a Pull Request.
+---
 
-## License
+## 🔥 Key Features
 
-This project is open source and available under the MIT License.
+* ✅ Real-time financial analysis
+* ✅ Financial Health Score (0–100)
+* ✅ Risk Classification (Low / Medium / High)
+* ✅ Remaining Monthly Purse calculation
+* ✅ Credit limit validation system
+* ✅ Interactive charts (Plotly)
+* ✅ Personalized recommendations
+* ✅ Financial summary table with status indicators
+
+---
+
+## 📊 Financial Metrics & Formulas
+
+### 1. Savings Rate
+
+**Formula:**
+
+```
+Savings Rate = (Income − Expenses) / Income × 100
+```
+
+**Why used:**
+Measures how much income is saved. Higher is better.
+
+---
+
+### 2. Debt-to-Income Ratio (DTI)
+
+**Formula:**
+
+```
+DTI = (Monthly Debt Payments / Income) × 100
+```
+
+**Why used:**
+Shows how much income goes toward debt. Lower is better.
+
+---
+
+### 3. Credit Utilization
+
+**Formula:**
+
+```
+Credit Utilization = (Credit Used / Credit Limit) × 100
+```
+
+**Why used:**
+Indicates how much credit you are using. Above 30% is risky.
+
+---
+
+### 4. Emergency Fund Ratio
+
+**Formula:**
+
+```
+Emergency Fund = Savings / Monthly Expenses
+```
+
+**Why used:**
+Shows how many months you can survive without income.
+
+---
+
+### 5. Debt-to-Asset Ratio
+
+**Formula:**
+
+```
+Debt-to-Asset Ratio = (Total Debt / (Total Debt + Savings)) × 100
+```
+
+**Why used:**
+Measures overall financial burden.
+
+---
+
+### 6. Disposable Income
+
+**Formula:**
+
+```
+Disposable Income = Income − Expenses
+```
+
+**Why used:**
+Money left after expenses.
+
+---
+
+### 7. Net Income
+
+**Formula:**
+
+```
+Net Income = Disposable Income − Debt Payments
+```
+
+**Why used:**
+Actual usable money after obligations.
+
+---
+
+### 8. Remaining Monthly Purse
+
+**Formula:**
+
+```
+Remaining Purse = Income − (Expenses + Debt Payments + Credit Spending)
+```
+
+**Why used:**
+Shows real leftover money and detects overspending.
+
+---
+
+## 🧠 Algorithm Logic
+
+1. Take user inputs
+2. Validate inputs (credit limit check)
+3. Calculate all financial metrics
+4. Apply financial rules:
+
+   * Savings Rate ≥ 20% → Good
+   * DTI ≤ 36% → Healthy
+   * Credit Utilization ≤ 30% → Safe
+5. Generate **Health Score (0–100)**
+6. Classify risk:
+
+   * 🟢 Low Risk
+   * 🟡 Medium Risk
+   * 🔴 High Risk
+7. Provide personalized recommendations
+
+---
+
+## 📈 Output
+
+* Financial Health Score
+* Risk Category
+* Savings & Debt Metrics
+* Interactive Financial Graph
+* Personalized Recommendations
+* Financial Summary Table
+
+---
+
+## 🛠️ Installation & Setup
+
+```bash
+git clone https://github.com/SohamAdgatla/Cep_Sem_4_Project
+cd Cep_Sem_4_Project
+pip install -r requirements.txt
+streamlit run main.py
+```
+
+---
+
+## 🧪 Tech Stack
+
+* Python
+* Streamlit
+* Pandas
+* Plotly
+
+---
+
+## 🎯 Use Cases
+
+* Students learning finance
+* Individuals tracking money
+* Beginners understanding financial ratios
+* Academic projects
+
+---
+
+## 🔮 Future Enhancements
+
+* AI-based financial prediction
+* Budget planner system
+* Expense tracking
+* Mobile-friendly UI
+
+---
+
+## 🤝 Contributing
+
+Contributions are welcome! Feel free to submit a pull request.
+
+---
+
+## 📜 License
+
+This project is open source under the MIT License.
